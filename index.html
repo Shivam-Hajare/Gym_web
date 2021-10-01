@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRO_GYM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        color: aliceblue;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/background_img.jpg');
+
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 59px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 100px;
+        background-color: rgb(12, 12, 11);
+    }
+
+    .GYMNAME {
+        color: rgb(240, 247, 236);
+        background-color: black;
+        text-align: center;
+        font-size: medium;
+
+    }
+
+    .mid {
+        /* border: 2px solid rgb(21, 226, 48); */
+        display: block;
+        width: 45%;
+        margin: 20px auto;
+    }
+
+    .right {
+        /* border: 2px solid rgb(133, 139, 231); */
+        display: inline-block;
+        position: absolute;
+        right: 125px;
+        top: 20px;
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        font-size: 25px;
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: aliceblue;
+        text-decoration: none;
+        font-size: 25px;
+        padding: 34px 23px;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: rgb(31, 231, 98);
+        text-decoration: underline;
+    }
+
+    .btn {
+        margin: 0px 0px;
+        background-color: rgb(245, 84, 84);
+        color: white;
+        padding: 15px 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        WIDTH: 220PX;
+        font-size: medium;
+    }
+
+    .btn:hover {
+        background-color: rgb(241, 236, 236);
+        color: red;
+    }
+
+    .Container {
+        /* border: 2px solid red; */
+        width: 30%;
+        margin: 139px 71px;
+        padding: 68px 20px;
+
+    }
+
+    .from-group input {
+        text-align: center;
+        display: block;
+        width: 350px;
+        padding: 10px;
+        margin: 10px auto;
+        border: 2px solid black;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 20px;
+        background-color: rgb(247, 234, 218);
+
+    }
+
+    .Container h1 {
+        text-align: center;
+    }
+
+    .Container button {
+        display: block;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/symbol.jpg" alt="">
+            <div class="GYMNAME">PRO GYM</div>
+        </div>
+
+        <div class="mid">
+            <ul class='navbar'>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Department</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">BECOME A MEMBER</button>
+
+        </div>
+    </header>
+    <div class="Container">
+        <h1>JOIN NOW</h1>
+        <form action="noaction.php">
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter your Email">
+            </div>
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter your Phone NO">
+            </div>
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">SUBMIT</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
